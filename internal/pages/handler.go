@@ -10,5 +10,5 @@ func NewHandler(router *fiber.Router) {
 	h := PagesHandler{
 		router: *router,
 	}
-	pages := h.router.Group("/pages")
+	_ = h.router.Group("/pages")
 }
