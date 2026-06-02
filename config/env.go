@@ -1,15 +1,23 @@
 package config
 
 import (
-	"github.com/gofiber/fiber/v2/log"
+	"os"
+
 	"github.com/joho/godotenv"
 )
 
-func Init() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Debug("No .env file")
-	} else {
-		log.Debug(".env file loaded")
+type Config struct {
+	LogFormat string
+	LogLevel  string
+}
+
+func Load() Config {
+	godotenv.Load()
+	logFormat := os.Getenv("LOG_FORMAT")
+	logLevel := os.Getenv("LOG_LEVEL")
+
+	return Config{
+		LogFormat: logFormat,
+		LogLevel:  logLevel,
 	}
 }
