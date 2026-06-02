@@ -4,21 +4,13 @@ go 1.26.3
 
 require (
 	github.com/gofiber/fiber/v2 v2.52.13
-	github.com/samber/slog-fiber v1.22.2
+	github.com/samber/slog-fiber v1.11.0
 )
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/gofiber/fiber/v3 v3.2.0 // indirect
-	github.com/gofiber/schema v1.7.1 // indirect
-	github.com/gofiber/utils/v2 v2.0.4 // indirect
-	github.com/philhofer/fwd v1.2.0 // indirect
-	github.com/tinylib/msgp v1.6.4 // indirect
 	go.opentelemetry.io/otel v1.41.0 // indirect
 	go.opentelemetry.io/otel/trace v1.41.0 // indirect
-	golang.org/x/crypto v0.50.0 // indirect
-	golang.org/x/net v0.53.0 // indirect
-	golang.org/x/text v0.36.0 // indirect
 )
 
 require (
